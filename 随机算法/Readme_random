@@ -1,0 +1,3 @@
+001randN.cpp实现等概率产生1-n之间的数，非常经典的进制转换思想。
+002rand5GenerateRand7.cpp由rand5()等概率产生rand7()(2015-4-28阿里面试题)
+003RandomShuffle.cpp基于随机数的完美洗牌算法

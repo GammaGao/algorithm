@@ -1,0 +1,11 @@
+001_MonkeyDemo	#猴子分桃的问题
+002_limitedMaxSum
+003_PrimeFactor #整数质因数分解
+004_JosephRing	#约瑟夫环最优解
+005_magicNumber	#魔数
+006_trailingZero #求阶乘尾随0的个数
+007_gcd 	#最大公约数
+008_CountPrime	#素数
+009_HappyNumber	#Happy数
+010_AddDigits  #整数分解
+011_ExcelSheetColumnNumber	#26进制

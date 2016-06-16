@@ -1,0 +1,19 @@
+以下问题均动态规划算法实现
+001_HouseRobber	#抢劫房子问题，实现财富最大值
+002_UniqueBinarySearchTrees  #找出N个结点组成二树种数
+002_UniqueBinarySearchTreesII	#找出N个结点组成二树
+003_ClimbingStairs 	#跳台阶问题
+004_MaximumProductSubarray #求最大子数组的积
+005_WordBreak  	#一个长字符串能否分解成指定的若干个单词的种数
+005_WordBreakII	#把上述每种情况都具体求出
+006_UniquePaths #机器人从格子左上角走到右下角的唯一走法种数
+007_UniquePathsII #规则同上，只是设置障碍物
+008_MinimumPathSum #规则同上，但找最短路径和
+009_MaximumSubarray #求最大连续子数组
+010_DecodeWays	#数字字符解码成26个英文字母方式种数
+011_BestTimeToBuyAndSellStock 	#一次买卖可实现的最大收益值
+012_ScrambleString 	#求一个字符串的scramble string
+013_最长递增子序列
+014_硬币组合
+015_编辑距离（相似度）
+016_MinWeightBinarySearchTree	#创建最小所有节点的层*val，二叉搜索树

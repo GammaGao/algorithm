@@ -1,0 +1,19 @@
+001_WordSearch.cpp 	#字符网格中查找字符串
+002_Subsets.cpp 	#幂集问题
+003_CombinationSum.cpp 	#组合数和问题
+003_CombinationSumII .cpp 	#求组合数和问题（有重复元素）
+003_CombinationSumII.cpp 	#求组合数和问题
+003_CombinationSumIII.cpp 	#求组合数和问题
+004_Combinations.cpp 	#求组合
+005_GenerateParentheses.cpp 	#匹配问题
+006_GrayCode.cpp 	#格雷码
+007_LetterCombinationsOfAPhoneNumber.cpp 	#键盘上数字对应的字母解析
+008_RestoreIPAddresses.cpp 	#由字符串恢复IP地址
+009_Permutations.cpp 	#全排列
+009_Permutations.cpp 	#有重复元素全排列II
+010_PalindromePartitioning.cpp #拆成回文子串
+011_N-Queens.cpp 	#八皇后
+011_N-QueensII.cpp 	#八皇后II
+012_robot.cpp	#机器人运动范围
+013_数独
+014_地铁投币	#同003

@@ -1,0 +1,1695 @@
+From: =?gb2312?B?0tHTySBJbnRlcm5ldCBFeHBsb3JlciAxMSCxo7Tm?=
+Subject: How many primes are there?
+Date: Fri, 8 May 2015 11:37:08 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D08983.50D08BB0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.3.9600.17496
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://primes.utm.edu/howmany.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3.org/TR/html4/loose.dtd"><HTML><HEAD><META=20
+content=3D"IE=3D11.0000" http-equiv=3D"X-UA-Compatible">
+  <LINK href=3D"https://primes.utm.edu/includes/primepages2.css" =
+rel=3D"stylesheet"=20
+type=3D"text/css">  <TITLE>How many primes are there?</TITLE>  <!--Owned =
+by Chris Caldwell, all rights reserved-->=20
+=20
+<META name=3D"description" content=3D"The prime number theorem tells us =
+the &#10;      number of primes less than n is about 1/log(n).  This =
+pages includes &#10;      history, theorems, related results and open =
+questions.">=20
+=20
+<META name=3D"keywords" content=3D"prime, primes, prime number theorem, =
+number theory, mathematics, how many, Reimann, counting">=20
+=20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1"> =20
+<META name=3D"author" content=3D"Chris K. Caldwell">  <LINK =
+href=3D"mailto:caldwell@utm.edu"=20
+rev=3D"made"> =20
+<STYLE type=3D"text/css">=0A=
+<!--=0A=
+.style1 {color: #FF0000}=0A=
+-->=0A=
+ </STYLE>
+=20
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17496"></HEAD>=20
+<BODY bgcolor=3D"#ffffff">
+<H1 align=3D"CENTER">How Many Primes Are There?</H1><A =
+name=3D"contents"></A>=20
+<H3>Contents:</H3>
+<OL>
+  <LI><A =
+href=3D"https://primes.utm.edu/howmany.html#intro">Introduction:</A>=20
+  Asking the Correct Question     =20
+  <UL>
+    <LI><A =
+href=3D"https://primes.utm.edu/howmany.html#pi_def">pi(<I>x</I>) is the=20
+    number of primes less than or         equal to <I>x</I></A>      =20
+    <LI><A href=3D"https://primes.utm.edu/howmany.html#table">A Table of =
+values of=20
+    pi(<I>x</I>)</A>     </LI></UL>
+  <LI><A href=3D"https://primes.utm.edu/howmany.html#pnt">The Prime =
+Number=20
+  Theorem</A>    =20
+  <UL>
+    <LI><A href=3D"https://primes.utm.edu/howmany.html#1">Consequence =
+One:</A> You=20
+    can Approximate pi(<I>x</I>) with          <I>x</I>/(log <I>x</I> - =
+1)      =20
+=20
+    <LI><A href=3D"https://primes.utm.edu/howmany.html#2">Consequence =
+Two:</A> The=20
+    <I>n</I>th prime is about <I>n</I>         log <I>n</I>      =20
+    <LI><A href=3D"https://primes.utm.edu/howmany.html#3">Consequence =
+Three:</A>=20
+    The chance of a random integer <I>x</I>         being prime is about =
+1/log=20
+    <I>x</I>     </LI></UL>
+  <LI><A href=3D"https://primes.utm.edu/howmany.html#hist">History</A> =
+of the=20
+  Prime Number Theorem and other approximations     of pi(<I>x</I>)   =20
+  <LI><A href=3D"https://primes.utm.edu/howmany.html#better">There are =
+better=20
+  estimates!</A> </LI></OL><!-- #BeginLibraryItem "/Library/Jump Bar =
+(without side menu).lbi" -->
+<P></P>
+<HR>
+<B>Primes:</B> [ <A title=3D"Home page" class=3D"menu" =
+href=3D"https://primes.utm.edu/"><B>Home</B></A>=20
+|| <A class=3D"menu" =
+href=3D"https://primes.utm.edu/largest.html"><B>Largest</B></A>
+ | <A class=3D"menu" href=3D"https://primes.utm.edu/prove/">Proving</A> =
+| <A class=3D"menu"=20
+href=3D"https://primes.utm.edu/howmany.html">How Many?</A> | <A =
+class=3D"menu" href=3D"https://primes.utm.edu/mersenne/">Mersenne</A>
+ | <A class=3D"menu" =
+href=3D"https://primes.utm.edu/glossary/">Glossary</A> | <A=20
+class=3D"menu"=20
+href=3D"https://groups.yahoo.com/neo/groups/primenumbers/info">Mailing =
+List</A> ]=20
+<HR>
+
+<P></P><!-- #EndLibraryItem -->
+<DIV align=3D"center">  =20
+<CENTER>
+<TABLE class=3D"double" bgcolor=3D"#f0f9ff" cellspacing=3D"1" =
+cellpadding=3D"5">
+  <TBODY>
+  <TR>
+    <TD>Notes: (1) Rather than fill this document with gifs like "<IMG =
+width=3D"30"=20
+      height=3D"14" alt=3D"[pi(x) using the Greek letter pi]" =
+src=3D"https://primes.utm.edu/gifs/pi_of_x.gif">"=20
+             (which can not be displayed on some browsers and display =
+poorly on =20
+            others), I am going to just write pi(<I>x</I>).&nbsp; (2) =
+log=20
+      <I>x</I>,        in this document, is the natural logarithm.&nbsp; =
+This is=20
+      sometimes        denoted ln <I>x</I>, but log <I>x</I> is the =
+mathematical=20
+      standard.</TD></TR></TBODY></TABLE></CENTER></DIV><A =
+name=3D"intro"></A>=20
+<H2><A href=3D"https://primes.utm.edu/howmany.html#contents"><IMG =
+width=3D"28"=20
+height=3D"28" alt=3D"[up]" =
+src=3D"https://primes.utm.edu/gifs/up.gif"></A>&nbsp;&nbsp;
+1. Introduction: Asking the Correct Question</H2>Over 2,300 years ago <A =
+href=3D"https://primes.utm.edu/notes/proofs/infinite/">Euclid=20
+proved</A> that the number of primes is infinite, so two possible =
+questions come=20
+to mind:=20
+<OL>
+  <LI>How many primes are there less than the number x?  =20
+  <LI>There are infinitely many primes, but how big of an infinity? =
+</LI></OL>This=20
+document will focus on the first question.&nbsp; The second question is
+ discussed on the page "<A =
+href=3D"https://primes.utm.edu/infinity.shtml">How Big=20
+of an Infinity?</A>." <A name=3D"pi_def"></A>=20
+<H3>1.1. pi(<I>x</I>) is the number of primes less than or equal to=20
+<I>x</I></H3>Let <I>x</I> be a positive real number.&nbsp; The question =
+"how=20
+many primes are there less than <I>x</I>?" has been asked so frequently =
+that its
+ answer has a name:=20
+<BLOCKQUOTE><IMG width=3D"30" height=3D"14" alt=3D"[pi(x) using the =
+Greek letter pi]"=20
+  src=3D"https://primes.utm.edu/gifs/pi_of_x.gif">  =3D <B>pi(<I>x</I>) =
+=3D the number=20
+  of primes less than or equal to <I>x</I>.</B> </BLOCKQUOTE>The primes =
+under 25=20
+are 2, 3, 5, 7, 11, 13, 17, 19 and 23 so pi(3) =3D 2, pi(10) =3D 4 and =
+pi(25) =3D=20
+9.&nbsp; (A longer table can be found in the <A =
+href=3D"https://primes.utm.edu/howmany.html#table">next
+ sub-section</A>.)&nbsp; Look at the following graph and notice how =
+irregular=20
+the graph of pi(<I>x</I>) is for small values of <I>x</I>.
+<CENTER>
+<P align=3D"center"><IMG width=3D"420" height=3D"300" alt=3D"[Graph of =
+pi(x), 0<x<100]"=20
+src=3D"https://primes.utm.edu/gifs/pi100.gif"></P></CENTER>Now back up =
+and view a=20
+larger portion of the graph of pi(<I>x</I>).
+<CENTER>
+<P align=3D"center"><IMG width=3D"420" height=3D"300" alt=3D"[Graph of =
+pi(x), 0<x<1000]"=20
+src=3D"https://primes.utm.edu/gifs/pi1000.gif"></P></CENTER>So even =
+though=20
+pi(<I>x</I>) is <A =
+href=3D"https://primes.utm.edu/notes/gaps.html">"locally"
+ irregular</A>, there is a definite trend to its values.&nbsp; (<A =
+href=3D"https://primes.utm.edu/gifs/pi1000000.gif">Graph=20
+to  1,000,000</A>.)=20
+<P> In this document we will study the function pi(<I>x</I>), the prime =
+number=20
+theorem (which quantifies this trend) and several classical =
+approximation to=20
+pi(<I>x</I>).=20
+<BLOCKQUOTE><A name=3D"table"></A>  =20
+  <TABLE align=3D"right" bgcolor=3D"#f0f9ff" border=3D"0">
+    <CAPTION><B>Table 1.&nbsp; Values of pi(<I>x</I>)</B></CAPTION>
+    <TBODY>
+    <TR>
+      <TH bgcolor=3D"#cceeff">&nbsp;</TH>
+      <TH bgcolor=3D"#cceeff">
+        <P align=3D"right"><I>x</I></P></TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff">pi(<I>x</I>)</TH>
+      <TH bgcolor=3D"#cceeff">reference</TH></TR>
+    <TR>
+      <TD align=3D"right">1</TD>
+      <TD align=3D"right">10</TD>
+      <TD align=3D"right">4</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">2</TD>
+      <TD align=3D"right">100</TD>
+      <TD align=3D"right">25</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">3</TD>
+      <TD align=3D"right">1,000</TD>
+      <TD align=3D"right">168</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">4</TD>
+      <TD align=3D"right">10,000</TD>
+      <TD align=3D"right">1,229</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">5</TD>
+      <TD align=3D"right">100,000</TD>
+      <TD align=3D"right">9,592</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">6</TD>
+      <TD align=3D"right">1,000,000</TD>
+      <TD align=3D"right">78,498</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">7</TD>
+      <TD align=3D"right">10,000,000</TD>
+      <TD align=3D"right">664,579</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">8</TD>
+      <TD align=3D"right">100,000,000</TD>
+      <TD align=3D"right">5,761,455</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">9</TD>
+      <TD align=3D"right">1,000,000,000</TD>
+      <TD align=3D"right">50,847,534</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">10</TD>
+      <TD align=3D"right">10,000,000,000</TD>
+      <TD align=3D"right">455,052,511</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">11</TD>
+      <TD align=3D"right">100,000,000,000</TD>
+      <TD align=3D"right">4,118,054,813</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">12</TD>
+      <TD align=3D"right">1,000,000,000,000</TD>
+      <TD align=3D"right">37,607,912,018</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">13</TD>
+      <TD align=3D"right">10,000,000,000,000</TD>
+      <TD align=3D"right">346,065,536,839</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">14</TD>
+      <TD align=3D"right">100,000,000,000,000</TD>
+      <TD align=3D"right">3,204,941,750,802</TD>
+      <TD align=3D"left">[<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/LMO85">LMO85</A>]</TD>=
+</TR>
+    <TR>
+      <TD align=3D"right">15</TD>
+      <TD align=3D"right">1,000,000,000,000,000</TD>
+      <TD align=3D"right">29,844,570,422,669</TD>
+      <TD align=3D"left">[<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/LMO85">LMO85</A>]</TD>=
+</TR>
+    <TR>
+      <TD align=3D"right">16</TD>
+      <TD align=3D"right">10,000,000,000,000,000</TD>
+      <TD align=3D"right">279,238,341,033,925</TD>
+      <TD align=3D"left">[<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/LMO85">LMO85</A>]</TD>=
+</TR>
+    <TR>
+      <TD align=3D"right">17</TD>
+      <TD align=3D"right">100,000,000,000,000,000</TD>
+      <TD align=3D"right">2,623,557,157,654,233</TD>
+      <TD align=3D"left">[<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/DR96">DR96</A>]</TD></=
+TR>
+    <TR>
+      <TD align=3D"right">18</TD>
+      <TD align=3D"right">1,000,000,000,000,000,000</TD>
+      <TD align=3D"right">24,739,954,287,740,860</TD>
+      <TD align=3D"left">[<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/DR96">DR96</A>]</TD></=
+TR>
+    <TR>
+      <TD align=3D"right">19</TD>
+      <TD align=3D"right">10,000,000,000,000,000,000</TD>
+      <TD align=3D"right">234,057,667,276,344,607</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">20</TD>
+      <TD align=3D"right">100,000,000,000,000,000,000</TD>
+      <TD align=3D"right">2,220,819,602,560,918,840</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">21</TD>
+      <TD align=3D"right">1,000,000,000,000,000,000,000</TD>
+      <TD align=3D"right">21,127,269,486,018,731,928</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">22</TD>
+      <TD align=3D"right">10,000,000,000,000,000,000,000</TD>
+      <TD align=3D"right">201,467,286,689,315,906,290</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">23</TD>
+      <TD align=3D"right">100,000,000,000,000,000,000,000</TD>
+      <TD align=3D"right">1,925,320,391,606,803,968,923</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD align=3D"right">24</TD>
+      <TD align=3D"right">1,000,000,000,000,000,000,000,000</TD>
+      <TD align=3D"right">18,435,599,767,349,200,867,866</TD>
+      <TD align=3D"left">(<A =
+href=3D"https://primes.utm.edu/notes/pi(10%5E24).html">note</A>)</TD></TR=
+>
+    <TR>
+      <TD align=3D"right">25</TD>
+      <TD align=3D"right">10,000,000,000,000,000,000,000,000</TD>
+      <TD align=3D"right">176,846,309,399,143,769,411,680</TD>
+      <TD align=3D"left">&nbsp;</TD></TR>
+    <TR>
+      <TD bgcolor=3D"#cceeff">&nbsp;</TD>
+      <TD bgcolor=3D"#cceeff">&nbsp;</TD>
+      <TD bgcolor=3D"#cceeff">&nbsp;</TD>
+      <TD align=3D"left" =
+bgcolor=3D"#cceeff">&nbsp;</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+<H3>1.2. A Table of values of pi(<I>x</I>)</H3>For the <I>smaller</I> =
+values of=20
+<I>x</I> in this table (say to 10,000,000,000) the value of pi(<I>x</I>) =
+can be=20
+found by finding and counting all of the primes.&nbsp;=20
+<P>Before the age of computers many mathematicians formed tables of=20
+primes.&nbsp; The most widely distributed was D. N. Lehmer's table of =
+primes to=20
+10,006,721 [<A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/Lehmer14">Lehmer14</A>=
+].&nbsp;
+ By far the most amazing was a table by Kulik completed in 1867.&nbsp; =
+This=20
+table listed the smallest factors of integers (hence all the primes) up =
+to
+ 100,330,200!</P>
+<P>In the 1870's Meissel developed a clever way to calculate =
+pi(<I>x</I>) far
+ beyond the known tables of primes and in 1885 (slightly mis-)calculated =
+
+pi(10<SUP>9</SUP>).&nbsp; Meissel's methods were simplified by D. H. =
+Lehmer in=20
+1959 and then in 1985 improved using sieve techniques by Lagarias, =
+Miller and=20
+Odlyzko [<A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/LMO85">LMO85</A>].</P>=
+
+<P>In 1994 Del=E9glise and Rivat [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/DR96">DR96</A>]
+ improved the technique once again to find the values for =
+pi(10<SUP>17</SUP>)=20
+and pi(10<SUP>18</SUP>).&nbsp; Del=E9glise continued this work with an =
+improved
+ algorithm to find pi(10<SUP>20</SUP>) and other values (see his e-mail =
+messages
+ of <A href=3D"https://primes.utm.edu/notes/md.html">18 Apr 1996</A> and =
+<A href=3D"https://primes.utm.edu/notes/md6-96.html">19
+ Jun 1996</A>).&nbsp; See <A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Riesel94">Riesel94</A>=
+=20
+for practical information about how these calculations are made.</P>
+<P> Xavier Gourdon's distributed computing project determined=20
+pi(4*10<SUP>22</SUP>),    <A =
+href=3D"http://numbers.computation.free.fr/Constants/Primes/Pix/pixprojec=
+t.html">but=20
+  stopped when they found</A> an error of at least one in the =
+calculation of  =20
+pi(10<SUP>23</SUP>).&nbsp;   Tom=E1s Oliveira e Silva has <A =
+href=3D"http://sweet.ua.pt/tos/primes.html">extensive=20
+  tables of values</A> of pi(<I>x</I>) and pi<SUB>2</SUB>(<I>x</I>). In =
+2007  =20
+he reevaluated pi(10<SUP>23</SUP>) to get the value in   the =
+table.&nbsp; This=20
+calculation was done on a single machine and  verified in 2008. </P>
+<P>The value given for pi(10<SUP>24</SUP>) was found by an analytic =
+methods=20
+assuming the  unproven  Riemann Hypothesis by J. Buethe, J. Franke, A. =
+Jost, T.=20
+Kleinjung. Their method "is  similar to the one described by Lagarias =
+and =20
+Odlyzko, but uses the Weil explicit formula  instead of  complex curve=20
+integrals" (see their <A=20
+href=3D"https://primes.utm.edu/notes/pi(10%5E24).html">e-mail  =
+announcing the=20
+result</A> in July 2010).  This value was later verified unconditionally =
+ by D.=20
+J. Platt [<A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/Platt2012">Platt2012</=
+A>].</P>
+<P>In May 2013, J. Buethe, J. Franke, A. Jost, and T. Kleinjung =
+completed=20
+calculating pi(10^25) unconditionally, using an analytic method based on =
+Weil's=20
+explicit formula.</P>
+<HR>
+<A name=3D"pnt"></A>=20
+<H2><A href=3D"https://primes.utm.edu/howmany.html#contents"><IMG =
+width=3D"28"=20
+height=3D"28" alt=3D"[up]" =
+src=3D"https://primes.utm.edu/gifs/up.gif"></A>&nbsp;&nbsp;
+2. The Prime Number Theorem: approximating pi(<I>x</I>)</H2>Even though =
+the=20
+distribution of primes seems random (there are (probably) infinitely =
+many twin=20
+primes and there are (definitely) arbitrarily large gaps between =
+primes), the=20
+function pi(<I>x</I>) is surprisingly well behaved: In fact, it has been =
+proved=20
+(see the <A href=3D"https://primes.utm.edu/howmany.html#hist">next =
+section</A>)=20
+that:=20
+<BLOCKQUOTE><B>The Prime Number Theorem:</B> The number of primes not=20
+  exceeding <I>x</I>  is <STRONG>asymptotic</STRONG> to <I>x</I>/log =
+<I>x</I>.=20
+</BLOCKQUOTE>In terms of pi(<I>x</I>) we would write:=20
+<BLOCKQUOTE><B>The Prime Number Theorem:</B> pi(<I>x</I>) ~ <I>x</I>/log =
+
+  <I>x</I>. </BLOCKQUOTE>This means (roughly) that <I>x</I>/log <I>x</I> =
+is a good=20
+approximation for pi(<I>x</I>)--but before we consider this and other=20
+consequences lets be a little more specific:=20
+<BLOCKQUOTE>  "<I>a</I>(<I>x</I>) is <B>asymptotic</B> to =
+<I>b</I>(<I>x</I>)"=20
+  and  "<I>a</I>(<I>x</I>) <B>~</B> <I>b</I>(<I>x</I>)" both mean that =
+the =20
+  limit (as <I>x</I> approaches infinity) of the ratio=20
+  <I>a</I>(<I>x</I>)/b(<I>x</I>)  is 1. </BLOCKQUOTE>If you have not had =
+calculus=20
+then this means that you can make <I>a</I>(<I>x</I>)/<I>b</I>(<I>x</I>) =
+as close=20
+to 1 as you want by just requiring that <I>x</I> is large enough.&nbsp; =
+Warning:=20
+<I>a(<I>x</I>)</I>&nbsp;~&nbsp;<I>b(<I>x</I>)</I> does <I>not</I> mean =
+that=20
+<I>a</I>(<I>x</I>)-<I>b</I>(<I>x</I>) is small!&nbsp; For example,=20
+<I>x</I><SUP>2</SUP> is asymptotic to <I>x</I><SUP>2</SUP>-<I>x</I>, but =
+the=20
+difference between them, <I>x</I>, gets arbitrarily large as <I>x</I> =
+goes to=20
+infinity.=20
+<H3><A name=3D"1">Consequence One: You can Approximate pi(<I>x</I>) with =
+
+<I>x</I>/(log <I>x</I> - 1)</A></H3>
+<TABLE align=3D"right" bgcolor=3D"#f0f9ff">
+  <CAPTION><B>Table 2.&nbsp; pi(<I>x</I>) verse <I>x</I>/log=20
+  <I>x</I></B></CAPTION>
+  <TBODY>
+  <TR>
+    <TH align=3D"right" bgcolor=3D"#cceeff"><I>x</I></TH>
+    <TH align=3D"right" bgcolor=3D"#cceeff">pi(<I>x</I>)</TH>
+    <TH align=3D"right" bgcolor=3D"#cceeff"><I>x</I>/log <I>x</I></TH>
+    <TH align=3D"right" bgcolor=3D"#cceeff"><I>x</I>/(log <I>x</I> =
+-1)</TH></TR>
+  <TR>
+    <TD align=3D"right">1000</TD>
+    <TD align=3D"right">168</TD>
+    <TD align=3D"right">145</TD>
+    <TD align=3D"right">169</TD></TR>
+  <TR>
+    <TD align=3D"right">10000</TD>
+    <TD align=3D"right">1229</TD>
+    <TD align=3D"right">1086</TD>
+    <TD align=3D"right">1218</TD></TR>
+  <TR>
+    <TD align=3D"right">100000</TD>
+    <TD align=3D"right">9592</TD>
+    <TD align=3D"right">8686</TD>
+    <TD align=3D"right">9512</TD></TR>
+  <TR>
+    <TD align=3D"right">1000000</TD>
+    <TD align=3D"right">78498</TD>
+    <TD align=3D"right">72382</TD>
+    <TD align=3D"right">78030</TD></TR>
+  <TR>
+    <TD align=3D"right">10000000</TD>
+    <TD align=3D"right">664579</TD>
+    <TD align=3D"right">620420</TD>
+    <TD align=3D"right">661459</TD></TR>
+  <TR>
+    <TD align=3D"right">100000000</TD>
+    <TD align=3D"right">5761455</TD>
+    <TD align=3D"right">5428681</TD>
+    <TD align=3D"right">5740304</TD></TR></TBODY></TABLE>The prime =
+number theorem=20
+clearly implies that you can use <I>x</I>/(log <I>x</I> - <I>a</I>) =
+(with any=20
+constant <I>a</I>) to approximate pi(<I>x</I>).&nbsp; The prime number =
+theorem=20
+was stated with <I>a</I>=3D0, but <A =
+href=3D"https://primes.utm.edu/howmany.html#better">it=20
+has been shown</A> that <I>a</I>=3D1 is the best choice:=20
+<P>There are longer tables <A=20
+href=3D"https://primes.utm.edu/howmany.html#table3">below</A> and (of =
+pi(x) only)=20
+<A href=3D"https://primes.utm.edu/howmany.html#table">above</A>.</P>
+<BLOCKQUOTE><B>Example:</B> Someone recently e-mailed me and asked for a =
+list=20
+  of <I>all</I>  the primes with at most 300 digits.&nbsp; Since the =
+prime=20
+  number theorem  implies this list would have about =
+1.4*10<SUP>297</SUP>=20
+  entries we know that  there can be no such list! </BLOCKQUOTE>Note =
+that Pierre=20
+Dusart [<A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/Dusart99">Dusart99</A>=
+] showed=20
+that if <I>x</I>&gt;598 then=20
+<BLOCKQUOTE> (<I>x</I>/log <I>x</I>)(1 + 0.992/log <I>x</I>) <U>&lt;</U> =
+
+  pi(<I>x</I>)    <U>&lt;</U>(<I>x</I>/log <I>x</I>)(1 + 1.2762/log =
+<I>x</I>)=20
+</BLOCKQUOTE>(The upper bound holds for all <I>x</I> &gt; 1.)&nbsp; This =
+gives a=20
+tight bound for larger <I>x</I>. Note <I>x</I>/log <I>x</I><U>&lt;</U>=20
+pi(<I>x</I>) for <I>x</I>&gt; 10.=20
+<H3><A name=3D"2">Consequence Two: The <I>n</I>th prime is about =
+<I>n</I> log=20
+<I>n</I></A></H3>Let p(<I>n</I>) be the <I>n</I>th prime.&nbsp; It is =
+easy to=20
+show that the prime number theorem is equivalent to the statement=20
+<BLOCKQUOTE><B>Theorem:</B> p(<I>n</I>) ~ <I>n</I> log <I>n</I> =
+</BLOCKQUOTE>
+[see <A href=3D"https://primes.utm.edu/references/refs.cgi/HW79">Hardy =
+and=20
+Wright</A>, page 10].&nbsp;&nbsp;A better estimate is=20
+<BLOCKQUOTE><B>Theorem:</B> p(<I>n</I>) ~ <I>n </I>(log <I>n</I> + log =
+log=20
+  <I>n</I> - 1) </BLOCKQUOTE>[see <A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Ribenboim95">Ribenboim=
+95</A>,=20
+pg. 249].=20
+<BLOCKQUOTE><B>Example:</B> These formulae predict that the one =
+millionth=20
+  prime is about  13,800,000 and 15,400,000 respectively.&nbsp; In fact, =
+the one=20
+  millionth prime  is 15,485,863. </BLOCKQUOTE>There have been many =
+improvements=20
+on these bounds; for example, Robin [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Robin83">Robin83</A>]
+ showed that if <I>n</I>&gt;8601 [actually Robin erroneously used 7021], =
+then=20
+<BLOCKQUOTE><I>n </I>(log <I>n</I> + log log <I>n</I> - 1.0073) &lt;=20
+  p(<I>n</I>) &lt; <I>n   </I>(log <I>n</I> + log log <I>n</I> - 0.9385) =
+
+</BLOCKQUOTE>More recently Massias and Robin [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/MR96">MR96</A>]
+ showed that if <I>n</I> <U>&gt;</U> 15985, then=20
+<BLOCKQUOTE>  p(<I>n</I>) <U>&lt;</U> <I>n</I> (log <I>n</I> + log log=20
+  <I>n</I> - 0.9427) </BLOCKQUOTE>and if <I>n</I> <U>&gt;</U> 13, then=20
+<BLOCKQUOTE>  p(<I>n</I>) <U>&lt;</U> <I>n</I> (log <I>n</I> + log log=20
+  <I>n</I> - 1 + 1.8  log log <I>n</I> / log <I>n</I>) =
+</BLOCKQUOTE>(which is=20
+better for large <I>n</I>). Pierre Dusart [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Dusart99">Dusart99</A>=
+]
+ made these results stronger and showed=20
+<BLOCKQUOTE>  p(<I>n</I>) &gt; <I>n</I> (log <I>n</I> + log log <I>n</I> =
+- 1)=20
+</BLOCKQUOTE>for all <I>n</I>.&nbsp; Dusart's article also gives better =
+bounds=20
+getting even  closer to the next term in the following well known =
+asymptotic=20
+expansion for <I>p<SUB>n</SUB></I>.&nbsp;  The first terms of this =
+asymptotic=20
+expansion were given by Cipolla [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Cipolla1902">Cipolla19=
+02</A>]=20
+in 1902: =20
+<BLOCKQUOTE> p(<I>n</I>) =3D <I>n</I> (log <I>n</I> + log log <I>n</I> - =
+1 +=20
+  (log   log (<I>n</I>) - 2)/log <I>n</I> -<BR> =20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+   ((log log (<I>n</I>))<SUP>2</SUP> - 6 log log (<I>n</I>) + 11)/(2=20
+  log<SUP>2</SUP>   <I>n</I>) + O((log log <I>n</I> / log=20
+  <I>n</I>)<SUP>3</SUP>)) </BLOCKQUOTE>
+<P>Again <A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/Ribenboim95">Ribenboim=
+95</A>=20
+and <A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Riesel94">Riesel94</A>=
+
+ are excellent starting places to look up more information. By the way, =
+if you
+ are interested in the <I>n</I>th prime for small <I>n</I> (say less =
+than
+ 1,000,000,000), then use <A =
+href=3D"https://primes.utm.edu/nthprime/">the=20
+<I>n</I>th prime page</A>."=20
+<H3><A name=3D"3">Consequence Three: The chance of a random integer =
+<I>x</I> being=20
+  prime is about 1/log <I>x</I></A></H3>Let <I>x</I> be a positive =
+integer.=20
+Since about <I>x</I>/log <I>x</I> of the <I>x</I> positive integers less =
+than or=20
+equal to <I>x</I> are prime, the probability of one of them being prime =
+is about=20
+1/log <I>x</I>.=20
+<BLOCKQUOTE><B>Example:</B> Suppose I want to find a 1000 digit =
+prime.&nbsp;=20
+  If I am  choosing 1000 digit integers <I>x</I> to <A =
+href=3D"https://primes.utm.edu/prove/">test=20
+  for primality</A>   <I>at random</I>, then I'd expect to test about=20
+  log(10<SUP>1000</SUP>) of  them, or about 2302 integers before finding =
+a=20
+  prime.&nbsp; Obviously if I used  odd integers I could multiply this =
+estimate=20
+  by 1/2, and if I choose integers  not divisible by 3, then I could =
+multiply by=20
+  2/3,... </BLOCKQUOTE>
+<P>Another way to say this is that the density of primes less than =
+<EM>x</EM> is=20
+  about 1/log <I>x</I>.&nbsp; Below is a graph of the actual density for =
+small  =20
+values of <EM>x</EM>.=20
+<P align=3D"center"><IMG width=3D"640" height=3D"300" alt=3D"The density =
+of the primes from 0 to 200"=20
+src=3D"https://primes.utm.edu/gifs/density.gif"></P><A =
+name=3D"hist"></A>=20
+<H2><A href=3D"https://primes.utm.edu/howmany.html#contents"><IMG =
+width=3D"28"=20
+height=3D"28" alt=3D"[up]" =
+src=3D"https://primes.utm.edu/gifs/up.gif"></A>&nbsp;&nbsp;=20
+  3. History of the Prime Number Theorem</H2>In 1798 Legendre published =
+the=20
+first significant conjecture on the size of pi(<I>x</I>), when in his =
+book=20
+<I>Essai sur la Th=E9ie des Nombres</I> he stated=20
+<BLOCKQUOTE>
+  <DL>
+    <DT>Legendre:    =20
+    <DD>pi(<I>x</I>) is approximately <I>x</I>/(log <I>x</I> - 1.08366)  =
+=20
+  </DD></DL></BLOCKQUOTE>Clearly Legendre's conjecture is equivalent to =
+the prime=20
+number theorem, the constant 1.08366 was based on his limited table for =
+values=20
+of pi(<I>x</I>) (which only went to <I>x</I> =3D 400,000).&nbsp; In the =
+long run 1=20
+is <A href=3D"https://primes.utm.edu/howmany.html#better">a better =
+choice</A> than=20
+Legendre's 1.08366.=20
+<P>Gauss was also studying prime tables and came up with a different =
+estimate
+ (perhaps first considered in 1791), communicated in a letter to Encke =
+in 1849
+ and first published in 1863.=20
+<BLOCKQUOTE>
+  <DL>
+    <DT>Gauss:    =20
+    <DD>pi(<I>x</I>) is approximately Li(<I>x</I>) (the principal value =
+of     =20
+    integral of 1/log <I>u</I> from <I>u</I>=3D0 to =
+<I>u</I>=3D<I>x</I>).  =20
+</DD></DL></BLOCKQUOTE>Notice again that Gauss' conjecture is equivalent =
+to the=20
+prime number theorem.&nbsp; Let's compare these estimates:=20
+<BLOCKQUOTE><A name=3D"table3"></A>  =20
+  <TABLE bgcolor=3D"#f0f9ff" cellpadding=3D"3">
+    <CAPTION><B>Table 3. Comparisons of approximations to =
+pi(x)</B></CAPTION>
+    <TBODY>
+    <TR align=3D"right">
+      <TH align=3D"right" bgcolor=3D"#cceeff"><I>x</I></TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff">pi(<I>x</I>)</TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff">Gauss' Li</TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff">Legendre</TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff"><I>x</I>/(log <I>x</I> - =
+1)</TH>
+      <TH align=3D"right" bgcolor=3D"#cceeff">R(<I>x</I>)</TH></TR>
+    <TR align=3D"right">
+      <TD>1000</TD>
+      <TD>168</TD>
+      <TD>178</TD>
+      <TD>172</TD>
+      <TD>169</TD>
+      <TD>168.4</TD></TR>
+    <TR align=3D"right">
+      <TD>10000</TD>
+      <TD>1229</TD>
+      <TD>1246</TD>
+      <TD>1231</TD>
+      <TD>1218</TD>
+      <TD>1226.9</TD></TR>
+    <TR align=3D"right">
+      <TD>100000</TD>
+      <TD>9592</TD>
+      <TD>9630</TD>
+      <TD>9588</TD>
+      <TD>9512</TD>
+      <TD>9587.4</TD></TR>
+    <TR align=3D"right">
+      <TD>1000000</TD>
+      <TD>78498</TD>
+      <TD>78628</TD>
+      <TD>78534</TD>
+      <TD>78030</TD>
+      <TD>78527.4</TD></TR>
+    <TR align=3D"right">
+      <TD>10000000</TD>
+      <TD>664579</TD>
+      <TD>664918</TD>
+      <TD>665138</TD>
+      <TD>661459</TD>
+      <TD>664667.4</TD></TR>
+    <TR align=3D"right">
+      <TD>100000000</TD>
+      <TD>5761455</TD>
+      <TD>5762209</TD>
+      <TD>5769341</TD>
+      <TD>5740304</TD>
+      <TD>5761551.9</TD></TR>
+    <TR align=3D"right">
+      <TD>1000000000</TD>
+      <TD>50847534</TD>
+      <TD>50849235</TD>
+      <TD>50917519</TD>
+      <TD>50701542</TD>
+      <TD>50847455.4</TD></TR>
+    <TR align=3D"right">
+      <TD>10000000000</TD>
+      <TD>455052511</TD>
+      <TD>455055614</TD>
+      <TD>455743004</TD>
+      <TD>454011971</TD>
+      <TD>455050683.3</TD></TR></TBODY></TABLE></BLOCKQUOTE>In this =
+table Gauss'=20
+Li(<I>x</I>) is always larger than pi(<I>x</I>), this is true for all =
+small=20
+<I>x</I> <U>&gt;</U> 2.&nbsp; However in 1914 Littlewood proved that=20
+pi(<I>x</I>)-Li(<I>x</I>) assumes both positive and negative values =
+infinitely=20
+often.&nbsp; In 1986 Te Riele showed there are more than =
+10<SUP>180</SUP>
+ successive integers <I>x</I> for which pi(<I>x</I>)&gt;Li(<I>x</I>) =
+between=20
+6.62<SUP>.</SUP>10<SUP>370</SUP> and 6.69<SUP>.</SUP>10<SUP>370</SUP>.=20
+<P>Tchebycheff made the first real progress toward a proof of the prime =
+number
+ theorem in 1850, showing there exist positive constants <I>a</I> =
+<U>&lt;</U> 1=20
+<U>&lt;</U> <I>b</I> such that=20
+<BLOCKQUOTE><I>a</I>(<I>x</I>/log <I>x</I>) &lt; pi(<I>x</I>) &lt;=20
+  <I>b</I>(<I>x</I>/log <I>x</I>) </BLOCKQUOTE>and that =
+<STRONG>if</STRONG>=20
+pi(<I>x</I>)/(x/log x) had a limit, then its value must be one.&nbsp; =
+Sylvester=20
+in 1982 refined Tchebycheff's method and showed that we can use <I>a</I> =
+=3D=20
+0.95695 and <I>b</I> =3D 1.04423 if <I>x</I> is large enough.&nbsp; (In =
+1962 it=20
+was shown that we can use <I>a</I> =3D 1 for all <I>x</I>&gt; 10 [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/RS62">RS62</A>].)=20
+<P>Finally, in 1896 Hadamard and independently de la Vall=E9e Poussin=20
+<B>completely proved the prime number theorem</B> using Riemann's work =
+relating=20
+pi(<I>x</I>) to the complex zeta function.&nbsp; <A =
+name=3D"better"></A>de la=20
+Vall=E9e Poussin also proved that Gauss' Li(<I>x</I>) is a better =
+approximation to=20
+pi(<I>x</I>) than x/(log <I>x</I> -<I>a</I>) no matter what value is =
+assigned to=20
+the constant <I>a</I> (and also that the best value for <I>a</I> is =
+1).&nbsp; A=20
+much better approximation than any of these is the Riemann function [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Ribenboim91">Ribenboim=
+91</A>,=20
+<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Riesel94">Riesel94</A>=
+].=20
+<P>In 1949 Atle Selberg [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/Selberg49">Selberg49</=
+A>]
+ and Paul Erd=F6s [<A=20
+href=3D"https://primes.utm.edu/references/refs.cgi/Erdos49">Erd=F6s49</A>=
+]
+ independently gave the first elementary proofs of the prime number =
+theorem--
+ here elementary means not using modern complex analysis--in fact their =
+proofs
+ are very difficult!&nbsp; An easier to read (but less elementary) proof =
+is in
+ Hardy and Wright's text [<A =
+href=3D"https://primes.utm.edu/references/refs.cgi/HW79">HW79</A>=20
+sect. 22.15-16].=20
+<P>Finally, when Hadamard and de la Vall=E9e Poussin proved the <A =
+href=3D"https://primes.utm.edu/howmany.html#pnt">Prime
+ number theorem</A>, they actually showed=20
+<P align=3D"center"><IMG width=3D"205" height=3D"34" alt=3D"pi(x) =3D =
+Li(x) + O(x*e^(-a*sqrt(log x)))"=20
+src=3D"https://primes.utm.edu/gifs/pnt_2.gif"> </P>for some positive =
+constant=20
+<I>a</I>.&nbsp; The error term depended on what was known about the =
+zero-free=20
+region of the Riemann zeta function within the critical strip.&nbsp; As =
+our=20
+knowledge of the size of this region increases, the error term =
+decreases.&nbsp;=20
+In 1901 von Koch showed that the <A=20
+href=3D"https://primes.utm.edu/notes/rh.html">Riemann hypothesis</A> is =
+equivalent=20
+to the far tighter estimate:=20
+<P align=3D"center"><IMG width=3D"197" height=3D"28" alt=3D"pi(x) =3D =
+Li(x) + O(x^(1/2)log x)"=20
+src=3D"https://primes.utm.edu/gifs/pnt_1.gif"> </P><A =
+name=3D"better"></A>=20
+<H2><A href=3D"https://primes.utm.edu/howmany.html#contents"><IMG =
+width=3D"28"=20
+height=3D"28" alt=3D"[up]" =
+src=3D"https://primes.utm.edu/gifs/up.gif"></A>&nbsp;&nbsp;=20
+4.  More Accurate Estimates </H2><IMG align=3D"right" alt=3D"Graph =
+showing R(x) approximates pi(x) well"=20
+src=3D"https://primes.utm.edu/gifs/pi(x)R(x).gif">=20
+<P>This page focused on the prime number theorem in it simplest form, =
+but there =20
+are far better estimates for pi(<I>x</I>).&nbsp; To cut to the chase, =
+the=20
+Riemann zeta function provides a way to give an exact formula  for =
+pi(<I>x</I>)=20
+by summing over the non-trivial zeros of the zeta function (in order of=20
+increasing magnitude).=20
+<BLOCKQUOTE><IMG alt=3D"An exact formula for pi(x)" =
+src=3D"https://primes.utm.edu/gifs/exact.gif">=20
+</BLOCKQUOTE>(At the primes, the graph of pi(<I>x</I>) takes a step up =
+one unit,=20
+this formula approches the value in the middle of that  step.)&nbsp; The =
+first=20
+(and dominant) term above is called Riemann's function R(<I>x</I>).=20
+<BLOCKQUOTE><IMG alt=3D"The definition of R(x)" =
+src=3D"https://primes.utm.edu/gifs/R(x)def.gif">=20
+</BLOCKQUOTE>The last form above for R(<I>x</I>) is the Graham series =
+and is an=20
+excellent way to calculate this function.&nbsp;    The graph on the =
+right shows=20
+how close of an approximaton R(<I>x</I>)  is, at least for small values =
+of=20
+<I>x</I>.&nbsp; An even better one for the smallest small <I>x</I> =
+values is the=20
+following (they are essentially the same for large  <I>x</I>). =20
+<BLOCKQUOTE><IMG alt=3D"An approximation to \pi(x) by R(x)" =
+src=3D"https://primes.utm.edu/gifs/R(x)appx.gif">=20
+</BLOCKQUOTE>To appreciate how close of an approximation these are, see =
+the  <A=20
+href=3D"http://www.primefan.ru/stuff/primes/table.html">impressive =
+tables of=20
+deviations</A> by Andrey Kulsha.
+<P></P>
+<P>Matthew R. Watkins also has a <A =
+href=3D"http://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/encoding1.ht=
+m">beautiful=20
+ development</A> of this information and some excellent animations.</P>
+<H3>Warning</H3><IMG align=3D"right" alt=3D"Graph showing R(x), Li(x) =
+and x/ln(x) approximate pi(x) well"=20
+src=3D"https://primes.utm.edu/gifs/PiAndOthers.png"> It is easy to look =
+at a graph=20
+like the one on the left which shows Li(<I>x</I>) (blue), R(<I>x</I>) =
+(black),=20
+ pi(<I>x</I>) (red)  and <I>x</I>/ln <I>x</I> (green); and then proclaim =
+
+"R(<I>x</I>) is the best estimate of pi(<I>x</I>)."  Indeed it  is for =
+that=20
+range, but as we mentioned above, Li(<I>x</I>)-pi(<I>x</I>)  changes =
+value=20
+infinitely often, and near where it does, Li(<I>x</I>) would be the best =
+value. =20
+  <A href=3D"https://primes.utm.edu/references/refs.cgi/Ingham1990">A. =
+E.=20
+Ingham</A> says it this way: =20
+<BLOCKQUOTE>Considerable importance was attached formerly to a function=20
+  suggested by Riemann as an approximation to  pi(x)... This function =
+represents=20
+  pi(x) with astonishing accuracy for all values of x for which pi(x) =
+has been=20
+   calculated, but we now see that its superiority over Li(x) is =
+illusory... and=20
+  for special values of x (as large as  we please) the one approximation =
+will=20
+  deviate as widely as the other from the true value.<BR><BR>... And we =
+can see=20
+  in the same way that the function Li(x)-(1/2)Li(x<SUP>1/2</SUP>) is  =
+'on the=20
+  average' a better approximation than Li(x) to pi(x); but no importance =
+can be=20
+  attached to the latter terms  in Riemann's formula even by repeated =
+averaging.=20
+</BLOCKQUOTE>The problem is that the contributions from the non-trivial =
+zeros at=20
+times swamps that of any but the main terms in  these expansions.<!-- =
+#BeginLibraryItem "/Library/signature (without side bar).lbi" -->
+<P></P>
+<HR>
+<A class=3D"menu" href=3D"https://primes.utm.edu/"><IMG width=3D"90" =
+height=3D"20"=20
+align=3D"left" alt=3D"Prime Pages' Home" =
+src=3D"https://primes.utm.edu/gifs/logo2.gif"=20
+border=3D"0"></A> Another    <A href=3D"https://primes.utm.edu/">prime =
+page</A> by=20
+<A href=3D"http://www.utm.edu/~caldwell">Chris  K. Caldwell</A>=20
+&lt;<I>caldwell@utm.edu</I>&gt;<!-- #EndLibraryItem --> </BODY></HTML>
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pi_of_x.gif
+
+R0lGODlhHgAOAPcJAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBPz8/AAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAAAkALAAAAAAeAA4A
+QAhXABMIHEiwoMGDBhEkUEiQYcODDhE+lCgwIsWKFxdmLGiRY0KMETsiEOlRo8OQGEtuTPlx5cCO
+LRuOnMkw5MiFKD1aJBnzpcaJPnn6ZJnyJk6gK2EOFRgQADs=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/up.gif
+
+R0lGODlhHAAcAMQIAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAACm////AAAA//8A/wD/
+/////zediOYChocAAFw6ZHBtZWZpZ3B1XGZpZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+AAgALAAAAAAcABwAQAVsICKOZGmeIsCsbMsCaKy6DBzfIzDrgOL/Cttp9sLdiCuhcUhr8Z5Kkyq6
+zDWT1RKylpXSqNkttmu91no/8BHKW6rJxLdRzO3SnW6oi23fk0lickdffylNgjJXOn93TjpBOHSP
+QIg5k0A+lYUhADs=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pi100.gif
+
+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
+AQkAADs=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pi1000.gif
+
+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
+kAj5hAq5kAzZkA75kBAZkRI5kS+QAAA7
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/density.gif
+
+R0lGODlhgAIsAdUMAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBKQsLMzs/CQkjPz8/P8A/wD/
+/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAAAwALAAAAACAAiwBQAb/QIZw
+SCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum8/otHrNbrvf8LhciSDWjXe8cLGYJhJzgYKD
+hIWGh4iJiHd8VH+KkJGSk5SVlpdceY1+gJien6ChoqOkVwiMfVWPpXR5QqewsEOxrrO1DKe2sq+0
+ubi9vL+0Rb52w8LFwbq8sr69wMzFz3i3utLQ00jJyLHRu8+3zdus5OVRxZuOnebsyu3v8PHy1EPp
+quvz+fr7/P1i3dSqJbOnzp/BgwgTKgToCqAxWwQLKpxIsaJFft9Opcqy6qLHjyBDRjoGq9EuK3/w
+iVzJsqXLMRk1LjiJpePLmzhz6kyCQEGu/24zaXJUubOo0aMVe/5UWmfpF5tIo0qdOtIOsTvbmP7y
+2RRBUDEpqYodS/ZST66nFKDt+ZVM2LJw48qFczaWWrt3q4ElOrfvWL0NGzLBahXXrFe2DB++WBeW
+WrSPuW5MJnTLW7+YM2tuchby47SRZQqzVuby5tOo4TrO2zmy61xfl+ZVYzq1bX+AHy6mg3g34d55
+fhY+IniSQz14Qrd2rfwXH7xcrwavzKX27evYzTFEToy5d+/QV3+eHh30uHHVoWZfz77d8u/fxbvm
+s2A2aM/jbUVPk5Jv+/9uONPUYsERiFUtTv0STIGKKfabO1ct2JuCggXWoBzywafhho89d/+fhrQ0
+F0h/AJZoIl0cpqhiZPStyBx616AVR3/+nWjjjZy5qOOOLboYI375UUIjjkS2996OSPLYY3wfcvij
+UAx1RtMxMw5Z5JUIFSddckl26aWG9NWXZJPjkQnikTIaQ50iNKqH5ZuioPnlnHRuGKaYdeb54pRM
+ZXhcNDyRl+YcbVoH56Gm6KnoonneiSejkEaqHJrQTYoglXOgZ0ShJCIqlpyShioqpI4+OuqpqK7F
+i6VbpbohppJwWqinZoDq6q245ppiqXzo6uuvdWb4GqjP7AiNE2kdS5ymocjqrJuVCAvstNRWay1z
+vN557bbcduttmdImCcafzBD37bnopqv/7rrwZeuuqezGi+6433ijF6345quvIA9qadF2uyXFnb9Z
+JkbhcAkxiBjB+zbs8MMQRywxhpUpO/HFGHsC8ITIReQEtBmHLPIbqNwz8skor3GSxx/XSAo4CU6R
+zRfSbHHczMvWem8XMHeVcki+sNzyPFlZqGAr9BwdocGkHU2Zz0krA+O9T7tzDYQBhQPYzn+SyzSE
+Ah4I9tY7/wwJOhtJZPbabGOBdtqcuNz23BITLODSzg1F9958axM23Cb3LfjeMZlUdhOGDq54yDF5
+FdThQy8uOeNhO+61OnJPrjmiWkXJ7D2Zby56Zl7D2vnpbT0V+uisl7UxMsnJtpaHYyTe//rt2TVm
+3mqfd2E77p68K/zwxBdfKhsILvzghdoUJraDiTGc5e73iacR0r6DDPz25xAHkpTVfyjaaICGoT33
+6CMFfmtNwvb4gfuVdn76bzxr//345z+rysQoz/HhxWGQMyYknID1z4DaUY6TDhQb3S1hTVf4Hf3o
+BjmBICtaCIMel3Qku8eJqHzJgtxQVjfBEsrDVvCplFp6FSTqrU9NZpCgCaHQsxra8IY4tCHyxDZA
+p/ULa89zENR+qMEGaU1CRhyQb5DILy+ZqUO9UiF44Be/NshwhjgRYSGYVTYLUgKFelrSq9rXu/Kh
+oVNYTGMTfSXGFRVNdoMahJXUSEebPf8RWG1MYVdSBCUISkeLe0FjHTdXOhjJSwFholOIJrUq1uxp
+j2WKxP4G6bDXkQuMh1xhHqslDkYiC1aI4BQlT4TJTCZJW9tapBvhyJpGAolV+qnY5dzgrFFOpJSm
+1JWjcvkrKbIGkA/s06XW8p5eDMuPoKulLRPFy2Z+iVfOjCakQLkMvwHTXpPQ3/zmgktpetNb7vqm
+OG8VLj0Z85FPBEb4QAmOY87yk1TrpFrWOM562tOUxrunPvepIZplEIHM44kpBlqFax6woARFqEIX
+SgWD/pOGCW1oRKXgUIBC1AoV5RhFJ7pRjOIoMGU0CJ9C2g+Qqimj5TBp0xL2tGuQtC//IEXpOxzy
+zoMciKbI3EdMVypSKuH0pcsMqlCHStSiGvWoHdXo15DKVNX8U1Mlk8I2m0pVkURVqiSsqlZvGTTA
+PWGqWw1rwurhVcRlVaxo1akmymrWtLo1KWsN3AkvVVC6/kOmWBsbXk2xVxra9a0quyoniPZXH7Lz
+iNy4m8G6FsSr4c2Hy8JU1ZTm2GzMEqrY6GMZi6abpk02IIDN2h7YGjl4cJZp1ITZSaejG8vedDrx
+xGnO/NZa1lrtp5ecmU8zS00gGs21nV1GTsOKNpSAdT3DDS3n4mpc5TpXH8WN4FmfS12zuEJoX51u
+dbebBrthb7R64654+ZVBu02HtFA4/+5410uIwmlBveyNL8k8h970ale++FWDey1z3/z6lwyF6wNQ
+kwDf/xo4DAEmn3QPzOAAVc5De71igyecBZKU5HHpobCGYVIeWbwvwxsOMc86DJuaYrW/Ik7xLDpM
+4r4SocAqjvHpOpy67MVYwwyjGouXUuPsofjGgPWuAWfM4wGfGMhINtdafolIIx85yVDWnZSb7GIl
+SBjKHkme0i4EQOfxpnlZZvKSqXzGH2O5pGA2jPQOKkACBTegCxEzfpwsXTOfWTNU+8iUHZkX0iY3
+CjC+83PXVyblTMal5gu0oNNqPfGxz3HlMiMYrrzo0BJ6PMMynICquJdKF8x5/uryEv/hbFFSE/CE
+hT7THqLEabco2tMaS7MSlTqwUbd5qTdFWJUP8egFLgiSm901pWHtkgoKlDOoxvQYeQFh8D3WxJgj
+9iBzbEhlLzst7/uggnvLXztLu2+hZieSVOkn2FKRznH79lG7CS5DezKEreL0nzHnbXWzYq94zXOp
+A8HuVM8HT/KsVEt3beVh27u7Vrm1EbE5nNcWMIkKf7iui7hliqObw2O6Y4vITUb4zTs9rz54Jj6R
+m2N7zzhORGGz+QjJVrNBkCInJKrK6U5PcobgSIB5zAl3q03uaU83/7iP671zLNE8VD739ZZaJfTa
+6bzolZxW0vVojDG3kk1Ph/qV+o3/dBay3JVmwuwTmj7CkGs9LlxH1dTlPMbAuJyyfQLty+d4dtKx
+K5HBomIcQ1hu/cRREG2q+7/Ki8C0U2vtLC8mK89EpjVdPIaBF7x7CD9kceI974Z/pN8/TnZXR17y
+7Mj8ulBpLSlSh9VXr3Dnjft50POan3a6fLcy4u9jVv3v7bR51OQgK9ePC/ZeIv207sj4I6lSRd1w
+9KZ/KSRlCl70wAeT8KO/KNqDi15jF+Yf522/CUOf+s/cJfgjlVvGntNSxB/36rv9LFt+f/xqLxX8
+u1TO9PuK2+XQ38OOPn9pZqv/4mRh4KJ3xJQ1KmQx76BNBidSANiALhJODhiBxfck//U3DMo3NeVX
+UxcHbfJjdpkggSCIK8ITgiSILudnLKlVLOh3R/RUgi7of8PzgjLoTS04gzZ4gxxiPPCCgzw4T14g
+ZAH1fj04hESYKzo4fUUoKf40ZF82GBzVPQwlM094UVEIhVVohRJ1hVSYhVp4QR71hV3ohVw4hlII
+hr53hiZyEmv2aRb3LzUDHA+FEW84cWy4PLNmajBFEnHIhmq2hzZVeH6oUwFzhziHQQfVh/uGhoq4
+iIzYiI74iJAYiZI4iZRYiZZ4iaOzPNyBiSm2ZpdSiJxYVdJTcthFYEQXimmkibTWG6Voiqj4X4Jl
+X6/oX7GYXbOYX7VYWrfIXrmoi/+7KF692Fa/uF7MhVXDSIxkJVfHSF3RNVjLWF3NaIwzpVroplo/
+GER8NVLc9njZpzPgUHFnFo3SGA+cZX609WxVczOyhTPgCDve8FiQlSBLkWswtFqzZU3bZ4+BEiHq
+qIZdMTVLZWnBKIzk+ImLZVtvBllSU1m2pVhwJ3cZEVm71ZBhs5AHGZBiZ5Ea2Y6+RZEHiZAPwY1E
+1VXNNVfoaC+IVVsW1lm7NTbtOFkAeY4byZATGZMG6FIDxzWFhZMOyZHrZ1QkWZKmtZP0eB5/FZFb
+5pCKlZORFWk2uXtKSZHP41gJ6ZSNdZX7GFxR6ZL0IJJDJY6AdoqLQJT1eJMC8Vn/cOeP1aRgElmV
+XPRbCNlS+WiWKmUNMaWTJwkoMQOOVOlcYCmLb8KBzzgKfwmYgymQySiUh/lWhZldYrmYJuQQrcgE
+HgiZdNSYtmiZjHZd9UWZj6mZ9DMQnbkElQmag6OKFAchk+mZppmKhKeNRLCapPmZrbk2QMg81zCa
+s0mbtfkzqImNcKebs9mbTZWbwmmKvEmchPQ375Wcyjk5+1UTpfmcrBOd0kmdI8mczemc2AlufyNg
+MjWd3Qmd38mRYTme7leePyme6Hma6imS7NmefJNgP8kACyifotM4ENac+KlG+olh/NmfM/Sf9SkE
+9ymgikOgXmmg3ImgjNNiDPBh//zloKEJoRK6nRSKPqdTYgU6BPGZoQ86j3VwoRMKoq3jGLIhoqpj
+ordDZP9IcAfKoinjohQCox8qo1GXol3RYyWKo4xDazqmo86xoJvSoD56G941Uju2o0RapEd6MWuI
+m0s6pKBon0b6pKehij2JC1OqEU16BDeKpXCyZ7FAO04npjw3ZnbBoyuKprbpQkzGpm3qptmolofB
+jq/5QCcXZmrqGHI6p3RKhoShMHg4JcBhqG9YpSQnZnjxpQV3pfh5LL8RpacGh5YaaauYJYy6Gn+q
+OpDaniWHiJk6akVkh5TBp+ERPvwRpggaqknphFxWqY2ViLghZ422BqwaqAhmcv//Yqvh42c2+qm6
+uhl7BiSf06EvlqvDmhqXZqxe8TXIWgTKuqzE6m/ycT2YGq3SOq3U6hfNyhWGlgr+6KjJ2q378q2O
+Rh/bpq1FKqzm+im1R0aa9lqQ966SWiEIyIQLo6ebeHKKSk/Xuhzuw2rk2q7dqmWzFqWGaqk3Q1mr
+qIbJ9kpA12yrUrBgyq2WKamXioeVunAeW5emRqmEWXtTtGrJF3dl5q7LGKqECKseW6r/c6ppxrEj
+a21UV6NMB0BVFqPo6aoy+2VaQkSzmqkiGycKtGxUmrOD8aU8+668+rSBSKs1mxdK56WpGkw417RO
+qxpHy3jOkW2zoZXsyqAqu7X/J/SwAtG1qoZtqVqXghltZksVOYabjvZ1bBuwZQlvTle2cUsOoQZQ
+/dZBeOtZWgF5fNu3hEm0SoaC6zQsdqm0Z5B1iOs6GZeuHwRv1AOPXqC1reliKIWaYghn4ZAIXCdw
+jiMifKeqZRlIoEo+zaCXA5cz5iZpECsOgFgv/rOxUEOzaMB/evQeS7J8pntSkYuxjFghbiarlNeG
+Cpe8QrSJSgSypvqvFEV/ZhK8wBaw5ka9Hmq8Z4i8l9q8tRaEgMi8e4qI0huz3EtD1isnLARHfVex
+65ushwt1ehi+vnF64yq0EPuQEjmpVnOnqDUIhkd87xuwQAe5c+e9Wje/Pwi1/3vowG6TcrEHtl6b
+uXDAuZOrU6JCH74LvxYblgy8wWZxKh6UeI9GCJJLwgmjdvbHdm8nd8U7wiz8eqmCeBIbUm8LcjRc
+w5kigju4SksbwzNcvz6sMkbodRxklJsnwchpxEcMYGykxKtkkPEWwskUxX6LR1SceKvlaIlAd1pc
+wlLXxW0XS+XmxPQGxWM8dtYie2ecs4qnxtKpwW38e9uCwzISPlOkNVq0w0PHxncshIoCx338wvIG
+bXq7e4bbw2NMyIyydr7EJFUnS4KiWXRMtnZ8xzwxembMZ8i3fIksT2Erv5l8sSvMydUbL3q8QC03
+KHD6bi8USmJ8xFpaePjUyv+/q3hgF3YHiMWeuskZuoYg1UyG7CO+7LugrHuSFsatp6vEjCDedMxf
+osxejManXMepTKFaSqhcOk7UTC3W93dYm82eWcuBCsl5rMupcnzk7DeppwXAbKXPzKLq/C3hnCvS
+YsmsBEEvla8pW8/Uac3gzM76TIHJvH1+rHeAHNDofJj3fEhIyEmLV3y97HZWd31zKcMLPEmoGNHG
+nM+4MskTqHmInHrrVMljy8MC7Xsg/U0THS93RNADiE4dd5bzrM0erW4vrU8x7YIViNENTS+Oxyzd
+p2I0bYPil4TENMdV1lsnC0vrFJ7tx4tM/YA/fdWXhVkMjXoSC8MDWMTOh1T/PS2DS33VqtLECE0p
+SY3C5pxz+FOhaB3JZ92DJ/hLZc24b83SVe2bc91zdf3XszfUdjQi2rR1gl0t0JTYpWd+jFWAWSnH
+OS3W90O5jJ0u/3fZ5OTOTX3IlxzU1bjS9aOAjkwymh1NmX3ag33Snv2/aYzJhJ1XzUfapb1Bqr1P
+73LbzaSCSxwuu4XXXZ2BnCdMk73RGKLbJZjbyB2BrM0kvi2Ay2zTA2aNW6FKNbjcRTiC2L3dvT3O
+be2DP8zd4o1IMTje5v0l133e6p2DxbPey53e7h3fkaKD8g2C8F3f+N0tRxjE+e0t46JU3vzN/T3g
+47ffBk3gzLGEimuXOdTguQ7+4BAe4RI+4RRe4RZ+4Rie4Rq+4Rze4bTQbB4e4iI+4jr0wIXnqk1I
+hklVhmGIbGbI4jAe4ysu41tI4zU+41ho42M3hTve4i6r4jluMxq116pc5EZ+5A0cQHpma0vesaCL
+G162sSLF5FKOGgkbtWimu1nmr1hONHfaQ6OKEf8Tq8xKqrwr5gIstWgONl1+tmNetAU5cXDOTVHO
+GFFO5AT8sGEuiAZS5Wt+QOKL5II+6IRe6IbuBUEAADs=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pnt_2.gif
+
+R0lGODlhzQAiALMPAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//AAAA//8A/wD/
+/////yH5BAEAAA8ALAAAAADNACIAQAT/8MlJq7046827/2AojmRpnmiqkoDUrvB7ySuN2RWe6RSN
+8x4Z4DcRunrF4ezhAxlfRqYFOGpKr0dssUPVWrPfLqw6LpvP6LR6zW67s++4fF5Stu5TONM2/NnF
+N3p8RDVTUIZ5N32LfIFaLmF1gI+Tkxw6lmU8mSmcdI6foaKjpKWmcZ6nqqsqh6yvsE5bSLNXVlE5
+koy4oK0bYpU7oKk9f0u2SpDFfcXKtVyCuYkzu8m9s4TSv8LH2XqxxLTcbsBs4afnserr7O3u7/Dx
+kNX09czy+G/p+fyo/f/s7uwDSNCENWwFE6qB8gVLFFwHnZnBNIaRtm/POt2bxoVZQzgPfGnxejYQ
+48VO21Je0uAtHcNHtmq5golQHEsw4jx+XLbrZiIfxjJesyly2Z4k5yKOM3kMmpeTTFl04yi0KdWa
+RC3W+aDV6aWZT72haARWitihRB3m2vkK0MEmyd7WqLbHVVy2LDZie4kUnC+0a6iU9IpvsMLDiBMr
+Xsw4TQQAOw==
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pnt_1.gif
+
+R0lGODlhxQAcALMPAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//AAAA//8A/wD/
+/////yH5BAEAAA8ALAAAAADFABwAQAT/8MlJq7046827/2AojmRpnmi6ARRruarqwg9dX/aZ33yL
+dztJcPaKCY8TmBKzCxqf0Kh0Sq1ary1AjrXEopzIGLiXGSc1Wx/wzA63jWat+iiv0cwfrV5vJ9qF
+d2J8FTOFMnV/WYNJhm14XpCRkpOUlU82TZYimXB7hJ8/nYigaHNupDJrPIGAXKw4e55loXdyo3hO
+Q258oya1L72tiaewuz5pYp9+Z8grpaSYZF/GjLrNJLmTYI8p3FDRHN6a4+Tl5ufo6erroWqL7PDx
+7Uiv8vbw4Kj3++j1xPHZLoV7pmrWm39F3uQSVxBNLERjGDojaHAgk4sICdWpJctUMlX+WIJJrMiI
+mMgyD3vpkjasG5tXwVpmdOeRE6yUFF8m1IdxHk2eOqj1WAkU2iqdRbH9ZHWN5Lx6y1zS8wiqaYiI
+keJcGZmKak9fPiERxcL1S8ec/NKqXcs2bQQAOw==
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/pi(x)R(x).gif
+
+R0lGODlhXgFWAfcjAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBISEhMTExERERKSkpOTk5GRk
+ZCwsLJSUlNTU1FRUVLS0tPT09HR0dDw8PBwcHIyMjMzMzExMTKysrOzs7GxsbDQ0NJycnNzc3Fxc
+XLy8vPz8/Hx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAACMALAAAAABeAVYB
+QAj/AEcIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNqtIhgo8ePIEOKHEmypEmHIhAgIDEigkoE
+HBR2PEmzps2bOHNmbBBCgc2ZOoMKHUq0qEMODiYYrKATqNGnUKNKfciSIAUICaYedKq1q9evNhWE
+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
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/exact.gif
+
+R0lGODlhcwFkAPcQAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBIyMjMzMzOzs7FRUVLS0tJyc
+nOTk5Pz8/GxsbDw8PNTU1PT09MTExKSkpHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAABAALAAAAABzAWQA
+QAj/ACEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3MixY0YKDB4yoOCxpEmJCyI4jPDgpMuX
+MBcmWKDwgQOMExAgiECS4QUFBiMwSOBAwYUELSFYaDDwQUiBDRLMHNiAqUAFESQITHChoIOkChFM
+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
+Ow==
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/R(x)def.gif
+
+R0lGODlhTwE2APcQAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBIyMjMzMzOzs7FRUVLS0tJyc
+nOTk5Pz8/GxsbDw8PNTU1PT09MTExKSkpHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAABAALAAAAABPATYA
+QAj/ACEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3FjRwcAKCCoM9HjxwUKTHFOqrJiAIAMG
+BEmuhIBy5QULM3NmxIegp8+fQH1KoHCQAoIFAhk0GHiUoIULAo3KpIkgZYSaAyPo5MgzqNefQzk2
+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
+eFqwp461rGdN61rb+ta4jkhAAAA7
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/R(x)appx.gif
+
+R0lGODlhvwAoAPcQAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBIyMjMzMzOzs7FRUVLS0tJyc
+nOTk5Pz8/GxsbDw8PNTU1PT09MTExKSkpHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAABAALAAAAAC/ACgA
+QAj/ACEIHEiwoMGDCBMqXMiwocOHECNKnEixosWCCPBddFgBwcaPDytIQECSZIKI+BBQGIjgJIQF
+ERwyWAmy5sCYNiXizHnxAgMEESoIVMDAgVAICY4SdaDgggMHNAU2sMCzJoOPDpw2aMCggYIICC5E
+zeqgAc2sR8luZdAUQVeuYaNWnWsRwQSBHVlqLFhhJ8gJVK/SrXsXQl6BGQ32Hcy4INPGL/1Cnkx5
+buLGhyv3vKtSYoPOEC64fOlxYGEJDQwuKK1Z5scHqSFcngD6AYIFUh9ASEmwgW7Zey9nbm1QwVGE
+vj/aJc584vLm0KNLn069uvXrVS8zHo69O2Ttg7l7/xf4O2YCuQ6/uo1wIYKCgglwJ3zggK4DsAwu
+yK+6wCfQ+uP1BuAFx0EkAVUCZXVTYRBQ8NQFCiTA1kBNjSfYRQ5mVdhXETQgQWEJOAVVBT9dgOAE
+DoR4F0wS4PNUBAwyduBNF1IA2kAekhfVAxJYuNECLSKGj262UXgjbnnVB2RwQwKHF2vRRbDffJI5
+F6NNsQXY0HNaUvScbRrZGKNLCCjQQJUSRUhBfBZMsAB60n2ZmJgEkWkmmtg9l5l2JEIQZHIbFSnb
+e3kWtudehl31529dNuroo5BGKumklEJ6wQUIFFjVBO1BWemnB2UKGW+glmqQqI2R2qiabD4wpamI
+af86l6qOmgnBhTlRwOhBu1oma1W0dilomRPR9pttjD620FawztWrdRHsZNtRzDZklI/N0eadbRGk
+2BVBNwIY7a3HPYDrdedSZMFVq8lHW1PvdShQBFTRihpp8oUlED7pztXeQBawtppByBLsKVcMJKww
+A1WW5PDDEEdskAMLu6VwlohFTFJBC1iQgAOzsfaZQbR2/PFlqAar8coa80qsQBLEhKAEv/XJXoIE
+PYDndP1GNDIEYNan7U0IdgyBtvX9HLRsRwXLXIQORfDsQyxO/VHPj1at2QOjJaTfRlw2a1PYYsum
+W18tkjVxAhZYINpHIj3c9XQInB1B2k6t3fbbXT5SpyqqDRJ540W/XYCUd36zBriuQA+uZd37Ki7r
+x4GDJLVscNL929+T18d4gP0BpQBRYbU1IQRLVeAUoRs1MOCv0IXuHukQYnp66quXrfvuvJsaEAA7
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/PiAndOthers.png
+
+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
+EAhywf8DLW2g6XmJT4wAAAAASUVORK5CYII=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://primes.utm.edu/gifs/logo2.gif
+
+R0lGODlhWgAUAPcMAAAAAIAAAACAAICAAAAAgIAAgACAgICAgAQEBAT8/IycnAAA/9z8/Gx8fFys
+5KS8vAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAMDAwP8AAAD/AP//AAAA//8A/wD//////yH5BAEAAAwALAAAAABaABQA
+QAj/ABkIHEiwoMGDCBMqXMiQoQMHDBAgYKAAQYOIEjMKlLgxo0eODz5ORMix4kUGDT4yCKmSpUeM
+GS8+ZDCzoc2bOA+mPGlz5syUFh8obMAzZ0KgDYQa7QlxJkeCT6GOfEp1osSkDKN2VLCSo8QHLjFi
+NciSZtOHaNOqXcu2rdu3cOPCNYuRotalOUvexXvQJ0SPSp8S7dhRaFWMCoByJZkxMALHGIWWlZiY
+st2gAv2iLLrZ4ODOoD9XxozwM8GKFkVTfjoaK2rMfuXKnk077euktWPn3s27d1u6fIMLN6r542Kd
+nIcbH46w+NSJRFEv/pyS5ejFD5AqPXhYoHaB2a8qYg2PmbxFuk4Biy1bF6b1sjsvJ/wodKdh6Ofr
+xkcdmaDzgnt1d5hHYzEG4Eh1seZVTNs9IB16fyFI2IETHvaaRgaeJtJlL1244EuaMSeiTewxBdyI
+KBYEVGM46ebbizDSxkBAADs=
+
+------=_NextPart_000_0000_01D08983.50D08BB0
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://primes.utm.edu/includes/primepages2.css
+
+body {
+	color: black; clear: both; margin-right: 5%; margin-left: 5%; =
+max-width: 60em; background-color: white;
+}
+hr {
+	color: rgb(0, 0, 153); background-color: white;
+}
+a {
+	color: rgb(0, 0, 51); text-decoration: underline; background-color: =
+rgb(240, 249, 255);
+}
+a.none {
+	color: black; background-color: transparent;
+}
+a.none:hover {
+	background-color: rgb(240, 249, 255);
+}
+a:hover {
+	color: black; text-decoration: underline; background-color: rgb(204, =
+238, 255);
+}
+a.glossary {
+	padding: 0px 2px; border: 1px dashed blue; border-image: none; color: =
+rgb(0, 0, 51); text-decoration: none; background-color: transparent;
+}
+.pre a {
+	text-decoration: underline;
+}
+.highlight {
+	background: rgb(102, 204, 255); color: rgb(0, 0, 0);
+}
+a.white {
+	background-color: rgb(255, 255, 255);
+}
+a.white:hover {
+	color: black; text-decoration: underline; background-color: rgb(204, =
+238, 255);
+}
+a.menu {
+	color: black; font-size: 12pt; text-decoration: none;
+}
+a.menu:hover {
+	color: rgb(0, 0, 255); text-decoration: underline; background-color: =
+rgb(102, 204, 255);
+}
+a.side {
+	color: black; font-size: 12pt; text-decoration: none; background-color: =
+rgb(102, 204, 255);
+}
+a.side:hover {
+	color: rgb(0, 0, 255); text-decoration: underline; background-color: =
+rgb(204, 255, 255);
+}
+a.bib {
+	color: black; text-decoration: none;
+}
+a.bib:hover {
+	text-decoration: underline; background-color: rgb(204, 255, 255);
+}
+table.double {
+	border: 4px double rgb(0, 0, 128); border-image: none;
+}
+
+------=_NextPart_000_0000_01D08983.50D08BB0--
